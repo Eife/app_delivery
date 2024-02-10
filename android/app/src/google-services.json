@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "173645095410",
+    "project_id": "hmelnaya-8a2de",
+    "storage_bucket": "hmelnaya-8a2de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173645095410:android:179e60871eaa0ba4770b6b",
+        "android_client_info": {
+          "package_name": "com.example.hmelnaya_lavka_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhxN3LlT6ezVhDGt3sixdGB9x0yqsEEvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
