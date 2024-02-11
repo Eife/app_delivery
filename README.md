@@ -1,7 +1,12 @@
 Это мобильное приложение дорабатывается для упрощения и автоматизации заказа еды из Заведения "Хмельная лавка". Приложение позволяет просматривать меню и делать заказы, отслеживать статус заказов, получать скидки, управлять своими учетными данными через систему аунтефикации Firebase.
 
-![Скриншот приложения](lib/assets/screenshot/one.png) ![Скриншот приложения](lib/assets/screenshot/two.png) 
-![Скриншот приложения](lib/assets/screenshot/three.png) ![Скриншот приложения](lib/assets/screenshot/four.png)
+<p align="center">
+  <img src="lib/assets/screenshot/one.png" alt="Скриншот приложения 1" width="200"/>
+  <img src="lib/assets/screenshot/two.png" alt="Скриншот приложения 2" width="200"/>
+  <img src="lib/assets/screenshot/three.png" alt="Скриншот приложения 3" width="200"/>
+  <img src="lib/assets/screenshot/four.png" alt="Скриншот приложения 4" width="200"/>
+</p>
+
 
 
 **Особенности:**
