@@ -1,3 +1,5 @@
+import 'package:hmelnaya_lavka_app/models/model.dart';
+
 Map<String, dynamic> test_bd = {
   'item_1': {
     'id': 'item_1',
@@ -294,3 +296,6 @@ List<String> navigationCategory = [
   "Орехи",
   "Креветки",
 ];
+
+Map<BasketItem, int> usersBasket = {};
+Map<BasketItem, String> usersBasketImage = {};

@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmelnaya_lavka_app/bloc/turn_food_bloc/bloc/turn_food_bloc.dart';
 import 'package:hmelnaya_lavka_app/components/find_product_line_component.dart';
 import 'package:hmelnaya_lavka_app/components/popular_food_component.dart';
-import 'package:hmelnaya_lavka_app/screens/basket_screen.dart';
 import 'package:hmelnaya_lavka_app/screens/catalog_screen.dart';
 import 'package:hmelnaya_lavka_app/utils/widget.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -48,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2),
               itemBuilder: (context, index) {
-                return SizedBox(height: 180,width: 140, child: oneProductComponent(state.allProductBasketList[index]).paddingOnly(right: 10, left: 10));
+                return SizedBox(height: 180,width: 140, child: oneProductComponent(context, state.allProductBasketList[index]).paddingOnly(right: 10, left: 10));
               })
         ]);
       } else {

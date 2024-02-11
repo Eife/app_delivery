@@ -99,7 +99,7 @@ class _AdminPanelState extends State<AdminPanel> {
                   });
                   goNext();
                 },
-                child: Text("Добавить в библиотек"))
+                child: Text("Добавить в библиотеку"))
           ],
         ).paddingAll(16),
       ),

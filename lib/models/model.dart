@@ -1,11 +1,11 @@
 class User {
   String name;
   String email;
-  String number_phone;
+  String numberPhone;
   String password;
   List<BasketItem> basketList= [];
 
-  User({required this.name, required this.email, required this.number_phone, required this.password, required this.basketList});
+  User({required this.name, required this.email, required this.numberPhone, required this.password, required this.basketList});
 
 
 }

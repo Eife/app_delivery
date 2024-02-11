@@ -23,7 +23,6 @@ class _PopularFoodComponentState extends State<PopularFoodComponent> {
 
     @override
   void initState() {
-    print("Popular init");
 
 
     BlocProvider.of<TurnFoodBloc>(context).add(OpenPopularityProductEvent(product: "Пиво"));
@@ -44,8 +43,6 @@ class _PopularFoodComponentState extends State<PopularFoodComponent> {
         
       }
       else if (state is OnePopularityProductState) {
-        if (state is OnePopularityProductState)
-        {print("Yes");}
 
         List<BasketItem> itemsInState = state.allProductBasketList;
         
@@ -53,9 +50,9 @@ class _PopularFoodComponentState extends State<PopularFoodComponent> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-          SizedBox(height: 190, width: 160, child: oneProductComponent(itemsInState[0])),
+          SizedBox(height: 190, width: 160, child: oneProductComponent(context, itemsInState[0])),
           24.width,
-          SizedBox(height: 190, width: 160, child: oneProductComponent(itemsInState[1])),
+          SizedBox(height: 190, width: 160, child: oneProductComponent(context, itemsInState[1])),
         
         ],);
       } else {

@@ -2,6 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:hmelnaya_lavka_app/models/model.dart';
+import 'package:hmelnaya_lavka_app/utils/test_bd.dart';
 import 'package:meta/meta.dart';
 
 
@@ -53,6 +54,25 @@ class TurnFoodBloc extends Bloc<TurnFoodEvent, TurnFoodState> {
 
     });
 
+      on<InitAllProductInDatabaseEvent>((event, emit) async {
+       print("Find all document in Firebase");
+       List<BasketItem> allDocument = [];
+
+       try {
+        for (String collectionName in navigationCategory) {
+          var collection = FirebaseFirestore.instance.collection(collectionName);
+          var snapshot = await collection.get();
+          for (var document in snapshot.docs) {
+            allDocument.add(BasketItem.fromJson(document.data() as Map<String, dynamic>));
+            
+          }
+          emit(InitAllProductInDatabaseState(allBasketItem: allDocument));
+        }
+
+
+       } catch (e) {print(e);}
+
+      });
 
 
 

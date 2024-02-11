@@ -43,3 +43,6 @@ class UserAddedToBasketEvent extends TurnFoodEvent {
 
 }
 
+class InitAllProductInDatabaseEvent extends TurnFoodEvent {
+  
+}

@@ -35,8 +35,9 @@ class _StartScreenState extends State<StartScreen> {
             selectedFontSize: 14,
             onTap: _onIndexTapped,
             items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Каталог"),
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Каталог", ),
               BottomNavigationBarItem(
+
                   icon: Icon(Icons.shopping_basket), label: "Корзина"),
               BottomNavigationBarItem(
                   icon: Icon(Icons.person), label: "Любимые"),

@@ -34,3 +34,10 @@ final class UserAddedToBasketState extends TurnFoodState {
   UserAddedToBasketState({required this.userAddedProductToBasket});
 
 }
+
+final class InitAllProductInDatabaseState extends TurnFoodState {
+  List<BasketItem> allBasketItem; 
+
+  InitAllProductInDatabaseState({required this.allBasketItem});
+
+}
